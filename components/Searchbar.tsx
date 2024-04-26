@@ -15,6 +15,7 @@ const Searchbar = () => {
   const [manufacturer, setManufacturer] = useState("");
   const [model, setModel] = useState("");
   const router = useRouter();
+
   const handleSearch = (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (manufacturer.trim() === "" && model.trim() === "") {
@@ -39,7 +40,7 @@ const Searchbar = () => {
 
     const newPathname = `${window.location.pathname}?${searchParams.toString()}`
 
-    router.push(newPathname)
+    router.push(newPathname, { scroll: false })
   }
   return (
     <form className="searchbar" onSubmit={handleSearch}>
