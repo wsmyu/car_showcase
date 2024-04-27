@@ -7,7 +7,7 @@ import { FaCar } from "react-icons/fa6";
 
 const SearchButton = ({ otherClasses }: { otherClasses: string }) => (
   <button type="submit" className={`-ml-4 z-10 ${otherClasses}`}>
-    <CiSearch  />
+    <CiSearch className="text-white text-xl" />
   </button>
 );
 
@@ -52,7 +52,7 @@ const Searchbar = () => {
         <SearchButton otherClasses="sm:hidden" />
       </div>
       <div className="searchbar__item">
-        <FaCar className="absolute ml-4" />
+        <FaCar className="absolute ml-4 " />
         <input
           type="text"
           name="model"

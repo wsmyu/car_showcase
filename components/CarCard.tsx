@@ -60,7 +60,7 @@ const CarCard = ({ car }: CarCardProps) => {
         <div className="car-card__btn-container">
           <CustomButton
             title="View More"
-            containerStyles="w-full py-[16px] rounded-full bg-orange-300"
+            containerStyles="w-full py-[16px] rounded-full bg-gray-500"
             textStyles="text-white text-[14px] leading-[17px] font-bold"
             handleClick={() => setIsOpen(true)}
             rightIcon={<FaLongArrowAltRight style={{ color: "white" }} />}

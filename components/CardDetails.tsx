@@ -50,7 +50,7 @@ const CardDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                     <IoMdClose />
                   </button>
                   <div className="flex-1 flex flex-col gap-3">
-                    <div className="relative w-full h-40 bg-orange-100 bg-cover bg-center rounded-lg">
+                    <div className="relative w-full h-40 bg-gray-200 bg-cover bg-center rounded-lg">
                       <Image
                         src="/hero.png"
                         alt="car model"

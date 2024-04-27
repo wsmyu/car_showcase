@@ -12,11 +12,11 @@ export default async function Home({ searchParams }: HomeProps) {
     limit: searchParams.limit || 10,
     model: searchParams.model || "",
   });
-  
+
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
 
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-hidden bg-gradient-to-l from-black via-gray-800 to-gray-700">
       <Hero />
       <div className="mt-12 padding-x padding-y max-width" id="discover">
         <div className="home__text-container">
@@ -39,12 +39,12 @@ export default async function Home({ searchParams }: HomeProps) {
             </div>
             <ShowMore
               pageNumber={(searchParams.limit || 10) / 10}
-              isNext={(searchParams.limit || 10) > allCars.length}
+              isLast={(searchParams.limit || 10) > allCars.length}
             />
           </section>
         ) : (
           <div className="home__error-container">
-            <h2 className="text-black text-xl font-bold">No results</h2>
+            <h2 className="text-white text-xl font-bold py-3">No results</h2>
             <p>{allCars?.message}</p>
           </div>
         )}

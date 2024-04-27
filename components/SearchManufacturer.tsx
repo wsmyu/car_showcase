@@ -36,12 +36,15 @@ const SearchManufacturer = ({
           />
           <Transition
             as={Fragment}
-            leave="transition ease-in duration-100"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
+            enter="transition duration-100 ease-out"
+            enterFrom="transform scale-95 opacity-0"
+            enterTo="transform scale-100 opacity-100"
+            leave="transition duration-75 ease-out"
+            leaveFrom="transform scale-100 opacity-100"
+            leaveTo="transform scale-95 opacity-0"
             afterLeave={() => setQuery("")}
           >
-            <Combobox.Options>
+            <Combobox.Options className="max-h-60 w-full overflow-y-auto absolute z-10">
               {
                 filteredManufacturers.map((item) => (
                   <Combobox.Option
@@ -49,7 +52,7 @@ const SearchManufacturer = ({
                     value={item}
                     className={({ active }) => `
                     relative search-manufacturer__option ${
-                          active ? "bg-orange-300 text-white" : "text-gray-900"
+                          active ? "bg-gray-600 text-white" : "bg-white text-gray-900"
                         }`}
                   >
                     {({selected,active})=>(
