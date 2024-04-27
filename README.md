@@ -23,9 +23,12 @@ Welcome to the Car Showcase Website! This website is designed to provide users w
 - Headless UI: Offers accessible and customizable UI components for building user interfaces.
 
 
-![image](https://github.com/wsmyu/car_showcase/assets/118221964/424ee0f2-bcf4-42bf-8576-107e80577c91)
-![image](https://github.com/wsmyu/car_showcase/assets/118221964/402e98b2-5a1a-4688-b027-e8ddc49b3915)
-![image](https://github.com/wsmyu/car_showcase/assets/118221964/185cb930-8eba-4d20-a72d-aa555cea0cf1)
+
+![image](https://github.com/wsmyu/car_showcase/assets/118221964/5be9178e-43eb-4997-a021-9c26ebf6dd34)
+![image](https://github.com/wsmyu/car_showcase/assets/118221964/92b386df-456a-4594-a4af-d7a2cc964d3a)
+![image](https://github.com/wsmyu/car_showcase/assets/118221964/2016cd53-e328-4572-98fa-1e43eda511fa)
+
+
 
 
 
